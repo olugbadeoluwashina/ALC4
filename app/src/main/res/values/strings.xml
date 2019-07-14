@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">OlugbadeShinaALC4.0</string>
+    <string name="about">About</string>
+    <string name="profile">My Profile</string>
+    <string name="alc">Welcome to ALC 4.0</string>
+    <string name="title_activity_about">About ALC</string>
+    <string name="title_activity_profile">My Profile</string>
+
+
+    <!-- Profile page strings -->
+    <string name="profile_name">Olugbade Oluwashina</string>
+    <string name="track">Track:</string>
+    <string name="country">Country:</string>
+    <string name="email">Email:</string>
+    <string name="number">Phone Number:</string>
+    <string name="slack">Slack Username:</string>
+
+    <!-- Profile Page value -->
+    <string name="tvw1">Android</string>
+    <string name="tvw2">Nigeria</string>
+    <string name="tvw3">olugbadeoluwashina@gmail.com</string>
+    <string name="tvw4">09067718695</string>
+    <string name="tvw5">"@"olugbade-shina</string>
+</resources>

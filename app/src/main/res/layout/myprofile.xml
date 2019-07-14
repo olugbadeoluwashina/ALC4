@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_top"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:background="#121AE3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:scaleX="1.7"
+        android:scaleY="0.9"
+        app:layout_constraintBottom_toBottomOf="@id/img_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_top"
+        app:srcCompat="@drawable/profile_pic"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/tvw_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/profile_name"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/info_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvw_profile_name" />
+
+    <RelativeLayout
+        android:id="@+id/info_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/tvw_track"
+            style="@style/textview"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:text="@string/track" />
+
+        <TextView
+            android:id="@+id/tvw_country"
+            style="@style/textview"
+            android:layout_below="@id/tvw_track"
+            android:text="@string/country" />
+
+        <TextView
+            android:id="@+id/tvw_email"
+            style="@style/textview"
+            android:layout_below="@id/tvw_country"
+            android:text="@string/email" />
+
+        <TextView
+            android:id="@+id/tvw_number"
+            style="@style/textview"
+            android:layout_below="@id/tvw_email"
+            android:text="@string/number" />
+
+        <TextView
+            android:id="@+id/tvw_slack"
+            style="@style/textview"
+            android:layout_below="@id/tvw_number"
+            android:text="@string/slack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tvw_track"
+            android:layout_alignParentEnd="true"
+            android:text="@string/tvw1"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tvw_country"
+            android:layout_alignParentEnd="true"
+            android:text="@string/tvw2"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tvw_email"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tvw3"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tvw_number"
+            android:layout_alignParentEnd="true"
+            android:text="@string/tvw4"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tvw_slack"
+            android:layout_alignParentEnd="true"
+            android:text="@string/tvw5"
+            android:textSize="@dimen/info_text_size" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
