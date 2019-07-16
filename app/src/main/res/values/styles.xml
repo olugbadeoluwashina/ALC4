@@ -14,7 +14,6 @@
     </style>
 
     <style name="textview">
-        <item name="android:layout_marginTop">@dimen/info_margin</item>
         <item name="android:textSize">@dimen/info_text_size</item>
         <item name="android:layout_marginBottom">@dimen/info_margin</item>
         <item name="android:layout_width">wrap_content</item>
